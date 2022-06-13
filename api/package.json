@@ -5,5 +5,8 @@
   "dependencies": {
     "@redwoodjs/api": "1.5.1",
     "@redwoodjs/graphql-server": "1.5.1"
+  },
+  "devDependencies": {
+    "serverless": "^3.19.0"
   }
 }
