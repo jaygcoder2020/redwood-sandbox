@@ -34,8 +34,9 @@ describe('ArticleCell', () => {
   // 2. Add test: expect(screen.getByText('Hello, world')).toBeInTheDocument()
 
   it('renders Success successfully', async () => {
-    expect(() => {
-      render(<Success article={standard().article} />);
-    }).not.toThrow();
+    const article = standard().article;
+    render(<Success article={article} />);
+    expect(screen.getByText(article.title)).toBeInTheDocument();
+    expect(screen.getByText(article.body)).toBeInTheDocument();
   });
 });
